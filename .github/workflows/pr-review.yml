@@ -21,7 +21,7 @@ jobs:
       - name: Trigger CoderabbitAI review
         uses: actions/github-script@v6
         env:
-          GITHUB_TOKEN: ${{ secrets.Bot }}
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
         with:
           script: |
             // Check for existing comment to prevent duplicates
